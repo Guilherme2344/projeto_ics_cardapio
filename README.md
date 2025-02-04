@@ -5,7 +5,7 @@ Integrantes:
 Guilherme Cristiano, Izabel Alice e Sâmia Sousa
 
 ## Site Backend
-Um gestor do cardápio poderá criar, visualizar, editar e excluir um cardápio ou item do cardápio.
+Um gestor do cardápio poderá criar, visualizar, editar e excluir um item do cardápio.
 
 ## Site Frontend
 Um cliente, anonimamente, poderá visualizar o cardápio disponível.
