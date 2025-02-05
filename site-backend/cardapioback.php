@@ -1,14 +1,8 @@
 <?php
-$servername = "192.160.0.2";
-$username = "root";
-$password = "ifrn";
-$dbname = "projeto_ics";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+include('conexao.php');
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+$sql = mysqli_query($conexao, 'select * from alunos') or die(mysqli_error($conexao));
 
 $categoria = $_POST['categoria'];
 $gestor_id = $_POST['gestor_id'];
