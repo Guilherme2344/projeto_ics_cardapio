@@ -1,4 +1,4 @@
-# projeto_ics_cardapio
+# PY Bistro
 Esse projeto consiste no desenvolvimento de uma aplicação para exibir e gerenciar o cardápio de um restaurante. 
 
 Integrantes:
