@@ -1,16 +1,17 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "projeto_ics";
 
-include('conexao.php');
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = mysqli_query($conexao, 'select * from alunos') or die(mysqli_error($conexao));
-
-$sql = "INSERT INTO gestor (email, nome, senha) VALUES ('$gestor_email', '$gestor_nome', '$gestor_senha') 
-        ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id)";
-$conn->query($sql);
-$gestor_id = $conn->insert_id;
-
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 $categoria = $_POST['categoria'];
+$gestor_id = $_POST['gestor_id'];
 $tipo = $_POST['tipo'];
 $descricao = $_POST['descricao'];
 

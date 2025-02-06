@@ -1,0 +1,13 @@
+header h1 img{
+    height: 3em;
+}
+header{
+    margin: 10px 20px;
+    display: flex;
+}
+header ul{ifrn/* justify-content: space-around; */
+    align-items: center;
+}
+header li{
+    margin: 0 10px;
+}
