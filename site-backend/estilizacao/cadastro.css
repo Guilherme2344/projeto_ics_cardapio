@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    min-width: 30%;
+    min-height: 60%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 3em;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+h1{
+    color: #582B02;
+    margin-bottom: 0.8em;
+}
+label {
+    color: #545500;
+    margin-bottom: 5px;
+}
+input {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+#botaocadastro{
+    background-color: #B06801;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    align-self: center;
+    font-size: 15px;
+    margin-bottom: 0.7em;
+    transition: background 0.3s;
+}
+#botaocadastro:hover{background-color: #582B02;}
+a{
+    text-decoration: none;
+    color: #B06801;
+    text-align: center;
+    font-size: 15px;
+}
+a:hover{color: #582B02;}
