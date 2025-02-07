@@ -1,5 +1,6 @@
 <?php
 require '../includes/config.php';
+$mensagem = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -30,6 +31,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
+
+    <?php if (!empty($mensagem)) : ?>
+        <div id="alerta" class="mensagem <?php echo (strpos($mensagem, 'sucesso') !== false) ? '' : 'erro'; ?>">
+            <?php echo $mensagem; ?>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let alerta = document.getElementById("alerta");
+                alerta.style.display = "block";
+                setTimeout(() => {
+                    alerta.style.opacity = "0";
+                    setTimeout(() => alerta.style.display = "none", 500);
+                }, 3000);
+            });
+        </script>
+    <?php endif; ?>
+
     <div class="container">
         <h1>Cadastrar Gestor</h1>
         <form method="post">
