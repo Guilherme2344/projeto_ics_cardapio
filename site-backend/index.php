@@ -13,15 +13,19 @@ if (!isset($_SESSION['gestor_email'])) {
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
+    <link rel="icon" href="estilizacao/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilizacao/menu.css">
 </head>
 
 <body>
-    <h1>Menu</h1>
-    <ul>
-        <li><a href="/itens.php">Itens</a></li>
-        <li><a href="/cardapios.php">Cardápios</a></li>
-        <li><a href="logout.php">Logout</a></li>
-    </ul>
+    <div class="container">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="itens.php">Itens</a></li>
+            <li><a href="cardapios.php">Cardápios</a></li>
+            <li><a id="logouta" href="logout.php">Logout</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
