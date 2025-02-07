@@ -31,15 +31,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="icon" href="estilizacao/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilizacao/.css">
 </head>
 
 <body>
-    <h1>Login</h1>
-    <form method="post">
-        Email: <input type="email" name="email" required><br>
-        Senha: <input type="password" name="senha" required><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required><br>
+            <input type="submit" id="botaologin" value="Login">
+        </form>
+    </div>
 </body>
 
 </html>
