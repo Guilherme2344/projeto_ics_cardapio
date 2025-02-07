@@ -170,19 +170,10 @@ h3{
     justify-content: center;
     gap: 10px;
 }
-.modal-body img {
-    width: calc(50% - 10px); 
-    height: auto;
-    max-height: 100% !important; 
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: zoom-in;
-}
-.modal-body img:hover {
-    transform: scale(1.6); 
-    z-index: 10;
-}
 h5{color: #582B02;}
+.modal-body ul li{
+    display: flex;
+}
 
 
 footer{
