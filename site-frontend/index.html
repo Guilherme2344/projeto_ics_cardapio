@@ -1,3 +1,57 @@
+<?php
+require '../includes/config.php';
+
+$sql_categorias = "SELECT id, categoria FROM cardapio";
+$result_categorias = $conn->query($sql_categorias);
+$categorias = [];
+
+if ($result_categorias->num_rows > 0) {
+    while ($row = $result_categorias->fetch_assoc()) {
+        $categorias[] = $row;
+    }
+}
+
+$sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
+            FROM item 
+            INNER JOIN cardapio ON item.cardapio_id = cardapio.id
+            WHERE cardapio.categoria = 'Café'";
+$result_itens = $conn->query($sql_itens);
+$itens_cafe = [];
+
+if ($result_itens->num_rows > 0) {
+    while ($row = $result_itens->fetch_assoc()) {
+    $itens_cafe[] = $row;
+    }
+}
+
+$sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
+            FROM item 
+            INNER JOIN cardapio ON item.cardapio_id = cardapio.id
+            WHERE cardapio.categoria = 'Almoço'";
+$result_itens_almoco = $conn->query($sql_itens);
+$itens_almoco = [];
+
+if ($result_itens_almoco->num_rows > 0) {
+    while ($row = $result_itens_almoco->fetch_assoc()) {
+    $itens_almoco[] = $row;
+    }
+}
+
+$sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
+            FROM item 
+            INNER JOIN cardapio ON item.cardapio_id = cardapio.id
+            WHERE cardapio.categoria = 'Jantar'";
+$result_itens_jantar = $conn->query($sql_itens);
+$itens_jantar = [];
+
+if ($result_itens_jantar->num_rows > 0) {
+    while ($row = $result_itens_jantar->fetch_assoc()) {
+    $itens_jantar[] = $row;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -116,8 +170,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <img src="imagens/café1.png" alt="Café da manhã 1">
-                <img src="imagens/café2.png" alt="Café da manhã 2">
+                    <ul>
+                        <?php foreach ($itens_cafe as $itens_cafe): ?>
+                        <li>
+                            <h2><?php echo $itens_cafe['tipo']; ?></h2>
+                            <p><?php echo $itens_cafe['descricao']; ?></p>
+                            <p><?php echo number_format($itens_cafe['preco'], 2, ',', '.'); ?></p>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -131,10 +192,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <img src="imagens/almoço1.png" alt="Almoço 1">
-                <img src="imagens/almoço2.png" alt="Almoço 2">
-                <img src="imagens/almoço3.png" alt="Almoço 3">
-                <img src="imagens/almoço4.png" alt="Almoço 4">
+                    <ul>
+                        <?php foreach ($itens_almoco as $itens_almoco): ?>
+                        <li>
+                            <h2><?php echo $itens_almoco['tipo']; ?></h2>
+                            <p><?php echo $itens_almoco['descricao']; ?></p>
+                            <p><?php echo number_format($itens_almoco['preco'], 2, ',', '.'); ?></p>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -148,10 +214,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <img src="imagens/jantar1.png" alt="Jantar 1">
-                <img src="imagens/jantar2.png" alt="Jantar 2">
-                <img src="imagens/jantar3.png" alt="Jantar 3">
-                <img src="imagens/jantar4.png" alt="Jantar 4">
+                    <ul>
+                        <?php foreach ($itens_jantar as $itens_jantar): ?>
+                        <li>
+                            <h2><?php echo $itens_jantar['tipo']; ?></h2>
+                            <p><?php echo $itens_jantar['descricao']; ?></p>
+                            <p><?php echo number_format($itens_jantar['preco'], 2, ',', '.'); ?></p>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         </div>
