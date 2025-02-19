@@ -117,13 +117,15 @@ form select{
     align-items: center;
     font-size: 12px;
     margin: 5px;
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     background-color: #545500;
     color: white;
+    transition: background 0.3s;
 }
+#lista-itens table td a:hover {background-color: #3c3d01;}
 
 #idd{
     justify-content: left;
