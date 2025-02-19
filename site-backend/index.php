@@ -18,14 +18,27 @@ if (!isset($_SESSION['gestor_email'])) {
 </head>
 
 <body>
-    <div class="container">
-        <h1>Menu</h1>
-        <ul>
-            <li><a href="itens.php">Itens</a></li>
-            <li><a href="cardapios.php">Cardápios</a></li>
-            <li><a id="logouta" href="logout.php">Logout</a></li>
-        </ul>
-    </div>
+    <header>
+        <h1><img src="estilizacao/logo.png" alt="PY Bistro" width="105" height="70"></h1>
+        <nav>
+            <ul>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/itens.php">Itens</a></li>
+                <li><a href="/cardapios.php">Cardápios</a></li>
+                <li><a id="sair" href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="itens.php">Itens</a></li>
+                <li><a href="cardapios.php">Cardápios</a></li>
+                <li><a id="logouta" href="logout.php">Logout</a></li>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>
