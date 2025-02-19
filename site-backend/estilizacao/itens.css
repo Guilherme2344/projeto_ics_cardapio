@@ -56,26 +56,27 @@ section{
     margin: 0 auto;
 }
 
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #582B02;
+    padding-bottom: 2em;
+}
+
 #lista-itens{
     padding: 3em;
     margin: 0 auto;
     width: 40em;
 }
 
-#lista-itens h2{
-    font-size: 30px;
-    text-align: center;
-    color: #582B02;
-    padding: 0 1em 2em 0;
-}
 
-form label {
+form label{
     display: block;
     margin-bottom: 0.5em;
     color: #545500;
 }
 
-form input, form textarea, form select {
+form input, form textarea, form select{
     display: block;
     margin-bottom: 0.5em;
     padding: 0.5em;
@@ -106,19 +107,9 @@ form select{
     color: #545500; 
     width: 60%;
 }
-
-
-
-#lista-itens table {
-    width: 100%;
-}
-
-#lista-itens table th {
-    padding: 1em;
-}
-#lista-itens table td{
-    margin: 0 7px;
-}
+#lista-itens table{width: 100%;}
+#lista-itens table th{padding: 1em;}
+#lista-itens table td{margin: 0 7px;}
 
 #lista-itens table td a{
     display: flex;
