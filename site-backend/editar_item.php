@@ -39,16 +39,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Editar Item</title>
+    <link rel="icon" href="estilo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilizacao/editen.css">
 </head>
 
 <body>
-    <h1>Editar Item</h1>
-    <form method="post">
-        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
-        Tipo: <input type="text" name="tipo" value="<?php echo $item['tipo']; ?>" required><br>
-        Descrição: <textarea name="descricao"><?php echo $item['descricao']; ?></textarea><br>
-        <input type="submit" value="Atualizar">
-    </form>
+    <header>
+        <h1><img src="estilizacao/logo.png" alt="PY Bistro" width="105" height="70"></h1>
+        <nav>
+            <ul>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/itens.php">Itens</a></li>
+                <li><a href="/cardapios.php">Cardápios</a></li>
+                <li><a id="sair" href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Editar Item</h2>
+            <form method="post">
+                <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                
+                <label for="tipo">Tipo:</label>
+                <input type="text" name="tipo" id="tipo" value="<?php echo $item['tipo']; ?>" required>
+                
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao"><?php echo $item['descricao']; ?></textarea>
+                
+                <input type="submit" value="Atualizar">
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
