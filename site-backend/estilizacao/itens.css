@@ -96,10 +96,10 @@ input[type="submit"]{
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    width: 80%;
+    width: 60%;
     font-size: 15px;
-    margin-top: 1em;
     transition: background 0.3s;
+    margin: 1em auto 0 auto;
 }
 input[type="submit"]:hover{background-color: #582B02;}
 
