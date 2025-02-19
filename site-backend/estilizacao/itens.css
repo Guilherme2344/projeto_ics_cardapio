@@ -124,6 +124,7 @@ form select{
     background-color: #545500;
     color: white;
     transition: background 0.3s;
+    width: 30%;
 }
 #lista-itens table td a:hover {background-color: #3c3d01;}
 
