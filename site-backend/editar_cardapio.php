@@ -38,15 +38,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Editar Cardápio</title>
+    <link rel="icon" href="estilo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilizacao/editcard.css">
 </head>
 
 <body>
-    <h1>Editar Cardápio</h1>
-    <form method="post">
-        <input type="hidden" name="id" value="<?php echo $cardapio['id']; ?>">
-        Categoria: <input type="text" name="categoria" value="<?php echo $cardapio['categoria']; ?>" required><br>
-        <input type="submit" value="Atualizar">
-    </form>
+    <header>
+        <h1><img src="estilizacao/logo.png" alt="PY Bistro" width="105" height="70"></h1>
+        <nav>
+            <ul>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/itens.php">Itens</a></li>
+                <li><a href="/cardapios.php">Cardápios</a></li>
+                <li><a id="sair" href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Editar Cardápio</h2>
+            <form method="post">
+                <input type="hidden" name="id" value="<?php echo $cardapio['id']; ?>">
+                
+                <label for="categoria">Categoria:</label>
+                <input type="text" name="categoria" id="categoria" value="<?php echo $cardapio['categoria']; ?>" required>
+                
+                <input type="submit" value="Atualizar">
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
