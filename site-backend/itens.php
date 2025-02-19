@@ -50,6 +50,7 @@ if ($result_itens->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Item</title>
+    <link rel="icon" href="estilo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilizacao/itens.css">
 </head>
 
