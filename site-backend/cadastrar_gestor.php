@@ -47,35 +47,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         </script>
     <?php endif; ?>
-    <header>
-        <h1><img src="estilizacao/logo.png" alt="PY Bistro" width="105" height="70"></h1>
-        <nav>
-            <ul>
-                <li><a href="/index.php">Home</a></li>
-                <li><a href="/itens.php">Itens</a></li>
-                <li><a href="/cardapios.php">Cardápios</a></li>
-                <li><a id="sair" href="logout.php">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h>2Cadastrar Gestor</h2>
-            <form method="post">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required><br>
     
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required><br>
+    <div class="container">
+        <h1>Cadastrar Gestor</h1>
+        <form method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
     
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required><br>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required><br>
     
-                <input type="submit" id="botaocadastro" value="Cadastrar">
-            </form>
-            <a href="login.php">Login</a>
-        </div>
-    </main>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required><br>
+    
+            <input type="submit" id="botaocadastro" value="Cadastrar">
+        </form>
+        <a href="login.php">Login</a>
+    </div>
 </body>
 
 </html>
