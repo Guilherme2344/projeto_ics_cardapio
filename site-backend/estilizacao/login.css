@@ -43,7 +43,7 @@ input {
 #botaologin{
     background-color: #B06801;
     color: white;
-    padding: 8px 20px;
+    padding: 9px 20px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -52,6 +52,8 @@ input {
     align-self: center;
     font-size: 15px;
     margin-bottom: 0.7em;
+    margin-top: 1em;
     transition: background 0.3s;
+    
 }
 #botaologin:hover{background-color: #582B02;}

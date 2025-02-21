@@ -5,6 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,40 +15,40 @@ main {
     justify-content: space-between;
 }
 
-section {
+section{
     box-shadow: -1px -1px 3px rgba(130, 130, 130, 0.2), 0px 5px 3px rgba(31, 31, 31, 0.2);
     border-radius: 20px;
-    padding: 3em;
 }
 
-#cadastrar_categoria {
+#cadastar-itens{
+    padding: 3em;
     width: 30em;
     margin: 0 auto;
-    height: 25em;
 }
 
-#listagem {
-    width: 40em;
+#lista-itens{
+    padding: 3em;
     margin: 0 auto;
-    height: 100%;
+    width: 40em;
 }
 
-#cadastrar_categoria h1, #listagem h2 {
-    font-size: 30px;
+#cadastar-itens h2{
+    font-size: 29px;
     text-align: center;
     color: #582B02;
     padding-right: 1em;
     padding-bottom: 2em;
 }
 
+
+
 form label {
     display: block;
     margin-bottom: 0.5em;
     color: #545500;
-    margin-bottom: 0.7em;
 }
 
-form input {
+form input, form textarea, form select {
     display: block;
     margin-bottom: 0.5em;
     padding: 0.5em;
@@ -57,8 +59,14 @@ form input {
     background-color: #F2F2F2;
 }
 
+form textarea{
+    width: 70%;
+}
 form input[type="text"] {
     width: 45%;
+}
+form input[type="number"] {
+    width: 30%;
 }
 
 form input[type="submit"] {
@@ -71,24 +79,27 @@ form input[type="submit"] {
     cursor: pointer;
     margin: 0 auto;
     width: 50%;
-    position:inherit;
 }
 
-#listagem table {
+form select{
+    color: #545500; 
+    width: 60%;
+}
+
+
+
+#lista-itens table {
     width: 100%;
-    align-items: center;
 }
 
-#listagem table th {
+#lista-itens table th {
     padding: 1em;
 }
-
-#listagem table td {
+#lista-itens table td{
     margin: 0 7px;
-    align-items: center;
 }
 
-#listagem table td a {
+#lista-itens table td a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +113,24 @@ form input[type="submit"] {
     color: white;
 }
 
+#idd{
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+}
+
+#lista-itens h2{
+    font-size: 29px;
+    text-align: center;
+    color: #582B02;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
 /* header */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
