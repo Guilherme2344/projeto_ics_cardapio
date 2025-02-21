@@ -51,12 +51,12 @@ if ($result_itens->num_rows > 0) {
     <meta charset="UTF-8">
     <title>Cadastrar Item</title>
     <link rel="icon" href="estilo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilizacao/itens.css">
+    <link rel="stylesheet" href="estilizacao/cadastrar_itens.css">
 </head>
 
 <body>
     <header>
-        <h1><img src="estilizacao/logo.png" alt="PY Bistro" width="105" height="70"></h1>
+        <h1><img src="images/logo.svg" alt="logo PY Bistro"></img></h1>
         <nav>
             <ul>
                 <li><a href="/index.php">Home</a></li>

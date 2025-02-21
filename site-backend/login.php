@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="icon" href="estilizacao/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilizacao/.css">
+    <link rel="stylesheet" href="estilizacao/login.css">
 </head>
 
 <body>
