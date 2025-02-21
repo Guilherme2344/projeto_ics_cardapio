@@ -164,16 +164,7 @@ h3{
     max-width: 60%;
     max-height: 80%;
 }
-.modal-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
 h5{color: #582B02;}
-.modal-body ul li{
-    display: flex;
-}
 
 
 footer{
@@ -204,4 +195,48 @@ footer{
 .quasenavfoot ul li a{
     text-decoration: none !important;
     color: #DFA767;
+}
+#descricao{
+    color: #582B02;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #582B02;
+    padding: 2em 1em;
+    margin: 0;
+}
+.modal-body ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-body ul li{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-body ul li h4{
+    font-size: 17px;
+    margin: 0;
+    align-items: start;
+}
+.modal-body ul li p{
+    margin: 0;
+}
+.modal-body ul li h3{
+    width: 55%;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0;
+    padding: 0;
 }

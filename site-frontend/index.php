@@ -173,9 +173,11 @@ if ($result_itens_jantar->num_rows > 0) {
                     <ul>
                         <?php foreach ($itens_cafe as $itens_cafe): ?>
                         <li>
-                            <h2><?php echo $itens_cafe['tipo']; ?></h2>
-                            <p><?php echo $itens_cafe['descricao']; ?></p>
-                            <p><?php echo number_format($itens_cafe['preco'], 2, ',', '.'); ?></p>
+                            <h3><?php echo $itens_cafe['descricao']; ?></h3>
+                            <div class="info">
+                                <h4><?php echo $itens_cafe['tipo']; ?></h4>
+                                <p>R$ <?php echo number_format($itens_cafe['preco'], 2, ',', '.'); ?></p>
+                            </div>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -195,9 +197,11 @@ if ($result_itens_jantar->num_rows > 0) {
                     <ul>
                         <?php foreach ($itens_almoco as $itens_almoco): ?>
                         <li>
-                            <h2><?php echo $itens_almoco['tipo']; ?></h2>
-                            <p><?php echo $itens_almoco['descricao']; ?></p>
-                            <p><?php echo number_format($itens_almoco['preco'], 2, ',', '.'); ?></p>
+                            <h3><?php echo $itens_almoco['descricao']; ?></h3>
+                            <div class="info">
+                                <h4><?php echo $itens_almoco['tipo']; ?></h4>
+                                <p>R$ <?php echo number_format($itens_almoco['preco'], 2, ',', '.'); ?></p>
+                            </div>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -217,9 +221,11 @@ if ($result_itens_jantar->num_rows > 0) {
                     <ul>
                         <?php foreach ($itens_jantar as $itens_jantar): ?>
                         <li>
-                            <h2><?php echo $itens_jantar['tipo']; ?></h2>
-                            <p><?php echo $itens_jantar['descricao']; ?></p>
-                            <p><?php echo number_format($itens_jantar['preco'], 2, ',', '.'); ?></p>
+                            <h3><?php echo $itens_jantar['descricao']; ?></h3>
+                            <div class="info">
+                                <h4><?php echo $itens_jantar['tipo']; ?></h4>
+                                <p>R$ <?php echo number_format($itens_jantar['preco'], 2, ',', '.'); ?></p>
+                            </div>
                         </li>
                         <?php endforeach; ?>
                     </ul>
