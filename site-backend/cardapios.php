@@ -3,7 +3,7 @@ session_start();
 require '../includes/config.php';
 
 if (!isset($_SESSION['gestor_email'])) {
-    header('Location: login.php');
+    header('Location: cardapio.backend.biz/login.php');
     exit;
 }
 
@@ -33,18 +33,19 @@ $result = $conn->query($sql);
     <head>
         <meta charset="UTF-8">
         <title>Cardápios</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="estilizacao/cardapios.css">
     </head>
 
     <body>
         <header>
-            <h1><img src="images/logo.svg" alt="logo PY Bistro"></img></h1>
+            <h1><img src="images/logo.png" alt="PY Bistro" width="105" height="70"></h1>
             <nav>
                 <ul>
-                    <li><a href="/index.php">Home</a></li>
-                    <li><a href="/itens.php">Itens</a></li>
-                    <li><a href="/cardapios.php">Cardápios</a></li>
-                    <li><a id="sair" href="logout.php">Logout</a></li>
+                    <li><a href="/cardapio.backend.biz/index.php">Home</a></li>
+                    <li><a href="/cardapio.backend.biz/itens.php">Itens</a></li>
+                    <li><a href="/cardapio.backend.biz/cardapios.php">Cardápios</a></li>
+                    <li><a id="sair" href="/cardapio.backend.biz/logout.php">Logout</a></li>
                 </ul>
             </nav>
         </header>
@@ -79,4 +80,4 @@ $result = $conn->query($sql);
         </main>
     </body>
 
-</html>
+</html> 

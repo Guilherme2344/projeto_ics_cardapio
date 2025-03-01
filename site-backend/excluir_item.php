@@ -3,7 +3,7 @@ session_start();
 require '../includes/config.php';
 
 if (!isset($_SESSION['gestor_email'])) {
-    header('Location: login.php');
+    header('Location: /cardapio.backend.biz/login.php.php');
     exit;
 }
 

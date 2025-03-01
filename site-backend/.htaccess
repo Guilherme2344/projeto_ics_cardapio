@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Gerenciar gestores"
+AuthUserFile /var/www/html/cardapio.backend.biz/.htpasswd
+Require valid-user

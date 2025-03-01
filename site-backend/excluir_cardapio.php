@@ -3,7 +3,7 @@ session_start();
 require '../includes/config.php';
 
 if (!isset($_SESSION['gestor_email'])) {
-    header('Location: login.php');
+    header('Location: /cardapio.backend.biz/login.php');
     exit;
 }
 
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-        header('Location: cardapios.php');
+        header('Location: /cardapio.backend.biz/cardapios.php');
         exit;
     } else {
         echo "Erro ao excluir cardápio: " . $stmt->error;

@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['gestor_email'])) {
-    header('Location: /login.php');
+    header('Location: /cardapio.backend.biz/login.php');
     exit;
 }
 ?>
@@ -13,13 +13,13 @@ if (!isset($_SESSION['gestor_email'])) {
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
-    <link rel="icon" href="estilizacao/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilizacao/menu.css">
 </head>
 
 <body>
     <main>
-        <h2 id="msg">Seja bem-vindo administrador</h2>
+        <h2 id="msg">Seja bem-vindo, administrador</h2>
         <div class="container">
             <h2>Menu</h2>
             <ul>

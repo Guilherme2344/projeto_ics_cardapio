@@ -1,5 +1,5 @@
 <?php
-require '../includes/config.php';
+require 'includes/config.php';
 
 $sql_categorias = "SELECT id, categoria FROM cardapio";
 $result_categorias = $conn->query($sql_categorias);
@@ -14,7 +14,8 @@ if ($result_categorias->num_rows > 0) {
 $sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
             FROM item 
             INNER JOIN cardapio ON item.cardapio_id = cardapio.id
-            WHERE cardapio.categoria = 'Café'";
+            WHERE cardapio.categoria = 'Café'
+            order by item.tipo";
 $result_itens = $conn->query($sql_itens);
 $itens_cafe = [];
 
@@ -27,7 +28,8 @@ if ($result_itens->num_rows > 0) {
 $sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
             FROM item 
             INNER JOIN cardapio ON item.cardapio_id = cardapio.id
-            WHERE cardapio.categoria = 'Almoço'";
+            WHERE cardapio.categoria = 'Almoço'
+            order by item.tipo";
 $result_itens_almoco = $conn->query($sql_itens);
 $itens_almoco = [];
 
@@ -40,7 +42,8 @@ if ($result_itens_almoco->num_rows > 0) {
 $sql_itens = "SELECT item.id, item.tipo, item.descricao, item.preco, cardapio.categoria 
             FROM item 
             INNER JOIN cardapio ON item.cardapio_id = cardapio.id
-            WHERE cardapio.categoria = 'Jantar'";
+            WHERE cardapio.categoria = 'Jantar'
+            order by item.tipo";
 $result_itens_jantar = $conn->query($sql_itens);
 $itens_jantar = [];
 

@@ -57,3 +57,10 @@ input {
     
 }
 #botaologin:hover{background-color: #582B02;}
+#a{
+    text-decoration: none;
+    color: #B06801;
+    text-align: center;
+    font-size: 15px;
+}
+#a:hover{color: #582B02;}
