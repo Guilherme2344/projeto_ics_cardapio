@@ -4,8 +4,9 @@ Esse projeto consiste no desenvolvimento de uma aplicação para exibir e gerenc
 Integrantes:
 Guilherme Cristiano, Izabel Alice e Sâmia Sousa
 
-## Site Backend
+## Site Frontend - http://pybistro-ics.sytes.net
+Um cliente, anonimamente, poderá visualizar o cardápio disponível.
+
+## Site Backend - http://pybistro-ics.sytes.net/cardapio.backend.biz
 Um gestor do cardápio poderá criar, visualizar, editar e excluir um item do cardápio.
 
-## Site Frontend
-Um cliente, anonimamente, poderá visualizar o cardápio disponível.
